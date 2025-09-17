@@ -1,0 +1,35 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      width: 100%;
+    }
+    .container {
+      height: 100vh;
+      width: 100vw;
+      display: grid;
+      grid-template-rows: 15% 10% 1fr 10%;
+      grid-template-columns: 20% 1fr;
+      gap: 5px;
+    }
+    .header {
+      grid-column: 1 / span 2;
+      background: rgb(169, 169, 169);
+    }
+    .sidebar {
+      grid-row: 2 / span 3;
+      background: black;
+    }
+    .sub-header {
+      background: forestgreen;
+    }
+    .content {
+      background: #FF6600;
+    }
+    .footer {
+      grid-column: 2 / 3;
+      background: rgb(240, 230, 250);
+    }
